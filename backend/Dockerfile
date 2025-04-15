@@ -21,4 +21,4 @@ COPY --from=build /app/target/*.jar app.jar
 COPY --from=build /app/lib/cloudsim-4.0.jar ./lib/
 
 # Run with explicit classpath inclusion
-CMD ["java", "-Dloader.path=./lib/", "-jar", "app.jar"]
+CMD ["java", "-Dloader.path=./lib/", "-jar","app.jar"]
